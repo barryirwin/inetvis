@@ -88,8 +88,10 @@ macx {
 
 } else:win32 {
 
-    LIBS += .\lib\win\wpcap.lib c:\MinGW\lib\libws2_32.a
+    LIBS += C:\wpcap\Lib\wpcap.lib  C:\Qt\Tools\mingw492_32\i686-w64-mingw32\lib\libws2_32.a 
+    LIBS += -lopengl32 
+  #  LIBS += -lwinpcap
     DEFINES += WIN
-    INCLUDEPATH += include\win\winpcap4
+    INCLUDEPATH += "C:/wpcap/Lib/Include/" C:/wpcap/Lib/Include/ C:/wpcap/Lib/Include/pcap/
 }
 ## end platform specific settings
