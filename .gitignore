@@ -13,6 +13,7 @@ src/inetvis-recorded/*
 *.swp
 *.*~
 
+build-inetvis*/
 logs/
 docs/*.*~
 docs/\#*.*\#
