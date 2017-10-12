@@ -53,15 +53,16 @@ Copyright (C) 2006-2017, Jean-Pierre van Riel, Barry Irwin, Yestin Johnson
 #include <qdatetime.h>
 #include <qtimer.h>
 #include <qdir.h>
-#include <pcap.h>
 #include <QSettings>
 #include <QCoreApplication>
 
 #ifdef MAC
 #include <OpenGL/gl.h>
+#include <pcap.h>
 #endif
 
 #ifdef LINUX
+#include <pcap.h>
 #include <GL/gl.h>
 #endif
 
@@ -69,6 +70,9 @@ Copyright (C) 2006-2017, Jean-Pierre van Riel, Barry Irwin, Yestin Johnson
 #include <GL/gl.h>
 #endif
 
+#include "C:\wpcap\Include\pcap.h"
+#include <QOpenGLWidget>
+#include <QOpenGLFunctions>
 #include <timeutil.h>
 #include <plotter.h>
 //packetevent.h and in turn, packetheaders.h are linked via plotter
